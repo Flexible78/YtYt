@@ -27,8 +27,6 @@
 }
 
 .header-nav {
-   display: flex;
-   row-gap: 41px;
 }
 
 .header-nav__list {
@@ -36,6 +34,10 @@
    column-gap: 41px;
    align-items: center;
    justify-content: space-between;
+
+   @media (max-width: 320px) {
+   display: none;
+   }
 }
 
 .header-nav__list-item {
@@ -49,6 +51,9 @@
 }
 
 .header__sighup {
+   @media (max-width: 320px) {
+      display: none;
+   }
 }
 
 .header__login {
