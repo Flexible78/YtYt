@@ -1,3 +1,72 @@
-h1 {
-   font-size: 66px
+.header {
+   padding-top: 12px;
+}
+
+
+.header__container {
+   padding: 18px 11px 19px 21px;
+   border-radius: 75px;
+   background: rgba(255, 255, 255, 0.90);
+   backdrop-filter: blur(7.5px);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: var(--primary);
+   font-size: 13px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.044%;
+}
+
+.logo {
+   width: 53px;
+   height: 19.459px;
+}
+
+.header__nav {
+}
+
+.header-nav {
+   display: flex;
+   row-gap: 41px;
+}
+
+.header-nav__list {
+   display: flex;
+   column-gap: 41px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header-nav__list-item {
+}
+
+.header__btns {
+   display: flex;
+   column-gap: 14.95px;
+   align-items: center;
+
+}
+
+.header__sighup {
+}
+
+.header__login {
+   font-size: 12px;
+   font-weight: 500;
+   color: var(--white);
+   line-height: 1.044;
+   display: flex;
+   flex-direction: row;
+   column-gap: 4.1px;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 34px;
+   background: #38BFF2;
+   padding: 8.87px 16.46px 8.87px 14.95px;
+
+   a {
+      width: 8.581px;
+      height: 7.872px;
+   }
 }
