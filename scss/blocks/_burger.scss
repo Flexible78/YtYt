@@ -9,20 +9,23 @@
 .burger__icon {
   position: relative;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
   width: 17px;
   height: 14px;
 
 }
 
 .burger__line {
-  position: absolute;
+  position: relative; /* Изменено с absolute */
   top: 50%;
-  /* transform: translateY(-50%); */
   left: 0;
+  display: flex; /* Добавлено */
+  align-items: center; /* Добавлено */
+  justify-content: center; /* Добавлено */
   width: 100%;
   height: 2px;
+  transform: translateY(-50%);
   border-radius: 2px;
   background-color: var(--secondary);
 
@@ -42,5 +45,18 @@
 
   &::after {
     bottom: -5px;
+  }
+}
+
+burger.active {
+  /* display: block; */
+
+  .burger__line {
+    transform: translateY(-50%) rotate(45deg);
+
+    &::before,
+    &::after {
+      transform: translateY(0) rotate(-45deg);
+    }
   }
 }
