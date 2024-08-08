@@ -1,0 +1,26 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "gulp starter pack",
+  "main": "main.js",
+  "scripts": {
+    "dev": "gulp",
+    "lint:scss": "stylelint **/*.scss --fix",
+    "lint:html": "npx prettier --write **/*.html",
+    "lint:js": "eslint ./src --fix --color",
+    "lint": "npx prettier --write **/*.html && eslint ./src --fix --color && stylelint **/*.scss --fix"
+  },
+  "author": "Krivich Andery",
+  "license": "ISC",
+  "devDependencies": {
+    "lint-staged": "^13.1.0",
+    "stylelint": "^15.1.0",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.2",
+    "stylelint-scss": "^4.4.0"
+  }
+}
